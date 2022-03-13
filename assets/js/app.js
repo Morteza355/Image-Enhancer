@@ -33,16 +33,16 @@ const offsetY = document.getElementById('offset-y-range');
 const blurRadius = document.getElementById('blur-radius-range');
 const Color = document.getElementById('color-range');
 offsetX.addEventListener('input', e=> {
-    image.style.cssText = `box-shadow : ${e.target.value}px ${offsetY.value}px ${blurRadius.value}px ${Color.value}`;
+    image.style.cssText += `box-shadow : ${e.target.value}px ${offsetY.value}px ${blurRadius.value}px ${Color.value}`;
 }); 
 offsetY.addEventListener('input', e=> {
-    image.style.cssText = `box-shadow : ${offsetX.value}px ${e.target.value}px ${blurRadius.value}px ${Color.value}`;
+    image.style.cssText += `box-shadow : ${offsetX.value}px ${e.target.value}px ${blurRadius.value}px ${Color.value}`;
 });
 blurRadius.addEventListener('input', e=> {
-    image.style.boxShadow = `${offsetX.value}px ${offsetY.value}px ${e.target.value}px ${Color.value}`;
+    image.style.cssText += `box-shadow : ${offsetX.value}px ${offsetY.value}px ${e.target.value}px ${Color.value}`;
 }); 
 Color.addEventListener('input', e=> {
-    image.style.boxShadow = `${offsetX.value}px ${offsetY.value}px ${blurRadius.value}px ${e.target.value}`;
+    image.style.cssText += `box-shadow : ${offsetX.value}px ${offsetY.value}px ${blurRadius.value}px ${e.target.value}`;
 }); 
 const fileUpload = document.getElementById('file-upload');
 fileUpload.addEventListener('change', e => {
