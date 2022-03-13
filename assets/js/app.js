@@ -11,6 +11,7 @@ BtnReset.addEventListener('click', e=> {
     Blur.value = 0;
     Brightness.value = 100;
     Contrast.value = 100;
+    Color.value = '#000000';
     image.style = '';
 });
 Opacity.addEventListener('input', e=> {
