@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <section class="image-managing">
+            <section class="image-container d-flex justify-content-center">
+                <input type="file" accept="image/jpeg, image/png" id="file-upload">
+                <img alt="Image" id="image-manage">
+            </section>
+            <section class="settings-container">
+                <label for="opacity-range" class="form-label">Opacity</label>
+                <input type="range" id="opacity-range" value="100" class="form-range" step="0.5">
+                <label for="gray-scale" class="form-label">Gray-Scale</label>
+                <input type="range" id="gray-scale" value="0" class="form-range" step="0.5">                
+                <label for="blur-range" class="form-label">Blur</label>
+                <input type="range" id="blur-range" value="0" class="form-range" step="0.1" max="10">                
+                <label for="bright-range" class="form-label">Brightness</label>
+                <input type="range" id="bright-range" value="100" class="form-range" step="1" min="0" max="500">             
+                <label for="contrast-range" class="form-label">Contrast</label>
+                <input type="range" id="contrast-range" value="100" class="form-range" step=".5" min="0" max="300">
+
+                <p class="fs-4">Drop Shadow</p>
+
+                <label for="offset-x-range" class="form-label fs-6">Offset-x</label>
+                <input type="range" id="offset-x-range" value="0" class="form-range" step="0.1" min="-100">
+
+                <label for="offset-y-range" class="form-label fs-6">Offset-y</label>
+                <input type="range" id="offset-y-range" value="0" class="form-range" step="0.1">
+
+                <label for="blur-radius-range" class="form-label fs-6">Blur-radius</label>
+                <input type="range" id="blur-radius-range" value="0" class="form-range" step="0.1">
+
+                <section class="mb-2">
+                    <label for="color-range" class="form-label fs-6">Color</label><br>
+                    <input type="color" id="color-range">
+                </section>
+
+                <button id="reset-btn" class="btn btn-danger">Reset</button>
+            </section>
+        </section>
+    </section>
+    <script src="https://kit.fontawesome.com/52e7ee47d7.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
